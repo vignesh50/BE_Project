@@ -3,7 +3,8 @@ import urllib2
 import cookielib
 from getpass import getpass
 
-username = "userID"
+# userID, password are based on your credential
+username = "userID" 
 passwd = "password"
 
 # Read IV Trip Level Idicator from log 
@@ -12,6 +13,7 @@ data=f.read()
 f.close()
 message = data
 
+# Target Mobile Number 
 number = ["MobileNumber"]
 message = "+".join(message.split(' '))
 url = 'http://site24.way2sms.com/Login1.action?'
